@@ -1,0 +1,134 @@
+/**
+ * Nordic Theme for Rofi
+ * Based on Polar Night and Snow Storm color palettes
+ */
+
+* {
+    /* Polar Night palette */
+    polar-1: #2E3440;
+    polar-2: #3B4252;
+    polar-3: #434C5E;
+    polar-4: #4C566A;
+    
+    /* Snow Storm palette */
+    snow-1: #D8DEE9;
+    snow-2: #E5E9F0;
+    snow-3: #ECEFF4;
+    
+    /* Theme colors */
+    background-color: @polar-1;
+    background-alt: @polar-2;
+    foreground: @snow-3;
+    foreground-alt: @snow-1;
+    
+    accent: @snow-2;
+    urgent: #BF616A;
+    
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+    
+    /* Properties for textbox widget */
+    highlight: @snow-2;
+    scrollbar: true;
+}
+
+window {
+    width: 45%;
+    background-color: @background-color;
+    border-radius: 1px;
+    border: 2px;
+    border-color: @polar-3;
+    transparency: "real";
+    fullscreen: false;
+}
+
+element {
+    padding: 8px 12px;
+    background-color: transparent;
+    text-color: @foreground-alt;
+}
+
+element selected {
+    text-color: @polar-1;
+    background-color: @accent;
+    border-radius: 4px;
+}
+
+element urgent {
+    background-color: transparent;
+    text-color: @urgent;
+}
+
+element active {
+    background-color: transparent;
+    text-color: @accent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 24px;
+    padding: 0px 10px 0px 0px;
+    background-color: transparent;
+}
+
+entry {
+    padding: 12px;
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @background-color;
+}
+
+listview {
+    background-color: @background-color;
+    columns: 1;
+    lines: 10;
+    fixed-height: false;
+    dynamic: true;
+    scrollbar: true;
+    scrollbar-width: 4px;
+    border: 0px;
+    spacing: 2px;
+    margin: 8px;
+}
+
+mainbox {
+    children: [inputbar, listview, mode-switcher];
+    background-color: @background-color;
+}
+
+mode-switcher {
+    background-color: @background-alt;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: @background-alt;
+    text-color: @foreground;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+button selected {
+    background-color: @background-color;
+    text-color: @foreground;
+    border-bottom: 2px;
+    border-color: @accent;
+}
+
+prompt {
+    enabled: true;
+    padding: 12px 0px 0px 12px;
+    background-color: @background-alt;
+    text-color: @foreground;
+}

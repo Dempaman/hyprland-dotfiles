@@ -1,0 +1,37 @@
+/*
+ *
+ * Nord Theme palette
+ * Converted from Catppuccin by request
+ *
+ */
+
+@define-color base      #2E3440;
+@define-color mantle    #2E3440;
+@define-color crust     #3B4252;
+
+@define-color text      #D8DEE9;
+@define-color subtext0  #4C566A;
+@define-color subtext1  #434C5E;
+
+@define-color surface0  #3B4252;
+@define-color surface1  #434C5E;
+@define-color surface2  #4C566A;
+
+@define-color overlay0  #5E81AC;
+@define-color overlay1  #81A1C1;
+@define-color overlay2  #88C0D0;
+
+@define-color blue      #5E81AC;
+@define-color lavender  #81A1C1;
+@define-color sapphire  #81A1C1;
+@define-color sky       #8FBCBB;
+@define-color teal      #8FBCBB;
+@define-color green     #A3BE8C;
+@define-color yellow    #EBCB8B;
+@define-color peach     #D08770;
+@define-color maroon    #BF616A;
+@define-color red       #BF616A;
+@define-color mauve     #B48EAD;
+@define-color pink      #B48EAD;
+@define-color flamingo  #D08770;
+@define-color rosewater #E5E9F0;

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Outlook
+Exec=/home/dennis-bjork/.local/bin/office-apps/outlook.sh
+Icon=outlook
+Type=Application
+Categories=Office;
+StartupWMClass=office-outlook

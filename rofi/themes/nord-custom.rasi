@@ -1,0 +1,157 @@
+/**
+ * Rofi Config File
+ * Theme to match dark application launcher with icons
+ * Enhanced with additional features
+ */
+
+configuration {
+    modi: "drun,run,window,filebrowser";
+    icon-theme: "Papirus";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "Apps";
+    display-run: "Run";
+    display-window: "Windows";
+    display-Network: "Network";
+    display-filebrowser: "Files";
+    sidebar-mode: true;
+    
+    // Enhanced features
+    font: "Noto Sans 11";
+    sort: true;
+    sorting-method: "fzf";
+    case-sensitive: false;
+    cycle: true;
+    auto-select: false;
+    parse-known-hosts: true;
+    combi-modi: "drun,run";
+    matching: "fuzzy";
+    
+    // Key bindings
+    kb-row-up: "Up,Control+k";
+    kb-row-down: "Down,Control+j";
+    kb-accept-entry: "Return,KP_Enter";
+    kb-remove-to-eol: "Control+k";
+    kb-mode-next: "Shift+Right,Control+Tab";
+    kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";
+    kb-remove-char-back: "BackSpace";
+}
+
+* {
+    background-color: #1e222a;
+    bg-alt: #282c34;
+    fg: #FFFFFF;
+    fg-alt: #787c99;
+    
+    accent: #3d8ade;
+    urgent: #e06c75;
+    
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+    
+    /* Properties for textbox widget */
+    highlight: bold #3d8ade;
+    scrollbar: true;
+}
+
+window {
+    width: 45%;
+    background-color: @background-color;
+    border-radius: 6px;
+    border: 2px;
+    border-color: #3d8ade;
+    transparency: "real";
+    fullscreen: false;
+}
+
+element {
+    padding: 8 12;
+    background-color: transparent;
+    text-color: @fg-alt;
+}
+
+element selected {
+    text-color: @fg;
+    background-color: @accent;
+    border-radius: 4px;
+}
+
+element urgent {
+    background-color: transparent;
+    text-color: @urgent;
+}
+
+element active {
+    background-color: transparent;  
+    text-color: #FFFFFF;}
+
+element-text {
+    background-color: transparent;
+    text-color: #FFFFFF;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 24;
+    padding: 0 10 0 0;
+    background-color: transparent;
+}
+
+entry {
+    padding: 12;
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @background-color;
+}
+
+listview {
+    background-color: @background-color;
+    columns: 1;
+    lines: 10;
+    fixed-height: false;
+    dynamic: true;
+    scrollbar: true;
+    scrollbar-width: 4px;
+    border: 0px 0px 0px 0px;
+    spacing: 2px;
+    margin: 8px;
+}
+
+mainbox {
+    children: [inputbar, listview, mode-switcher];
+    background-color: @background-color;
+}
+
+mode-switcher {
+    background-color: @bg-alt;
+}
+
+button {
+    padding: 8 12;
+    background-color: @bg-alt;
+    text-color: @fg;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @background-color;
+  text-color: @fg;
+}
+
+prompt {
+    enabled: true;
+    padding: 12 0 0 12;
+    background-color: @bg-alt;
+    text-color: @fg;
+}

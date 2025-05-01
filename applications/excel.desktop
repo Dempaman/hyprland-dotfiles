@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Microsoft Excel
+Exec=/home/dennis-bjork/.local/bin/office-apps/excel.sh
+Icon=excel
+Type=Application
+Categories=Office;
+StartupWMClass=office-excel
