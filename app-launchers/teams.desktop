@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Microsoft Teams
+Exec=/home/dennis-bjork/.local/bin/office-apps/teams.sh
+Icon=teams
+Type=Application
+Categories=Office;
+StartupWMClass=office-teams

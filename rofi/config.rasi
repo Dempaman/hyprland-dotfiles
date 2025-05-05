@@ -155,4 +155,7 @@ prompt {
     background-color: @bg-alt;
     text-color: @fg;
 }
+//@theme "~/.config/rofi/themes/nordic.rasi"@theme "~/.config/rofi/themes/nord.rasi"
+
+
 @theme "~/.config/rofi/themes/nordic.rasi"

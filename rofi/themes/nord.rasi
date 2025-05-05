@@ -36,9 +36,8 @@
 window {
     background-color:   @nord0;
     border-color:       @accent-color;
-
     location:   center;
-    width:      480px;
+    width:      400px;
     border:     1px;
 }
 

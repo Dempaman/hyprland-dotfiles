@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Microsoft Word
+Exec=/home/dennis-bjork/.local/bin/office-apps/word.sh
+Icon=word
+Type=Application
+Categories=Office;
+StartupWMClass=Google-chrome
